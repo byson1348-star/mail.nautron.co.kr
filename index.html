@@ -1,53 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Nautron 메일 로그인</title>
-  <meta name="description" content="Nautron 사내 메일(네이버웍스) 로그인으로 이동합니다." />
-
-  <!-- Open Graph (카카오톡 미리보기) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Nautron 메일 로그인" />
-  <meta property="og:description" content="Nautron 사내 메일(네이버웍스) 로그인으로 이동합니다." />
-  <meta property="og:url" content="https://mail.nautron.co.kr" />
-  <!-- 아래 이미지는 선택: 없으면 생략 가능 / 있으면 로고 경로를 정확히 -->
-  <meta property="og:image" content="https://www.nautron.co.kr/logo.png" />
-
-  <!-- Twitter (겸용) -->
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- ✅ 카톡 크롤러가 메타를 읽을 시간을 주기 위해 0초 리프레시 대신 JS 지연 -->
-  <noscript>
-    <meta http-equiv="refresh" content="2; url=https://mail.worksmobile.com" />
-  </noscript>
-
-  <style>
-    body{
-      margin:0; font-family:system-ui, -apple-system, "Noto Sans KR", Arial, sans-serif;
-      background:#070A0F; color:#EAF0FF; display:flex; min-height:100vh;
-      align-items:center; justify-content:center; text-align:center; padding:24px;
-    }
-    .box{max-width:560px}
-    .hint{opacity:.8; margin-top:10px}
-    a{color:#76A9FF}
-  </style>
+  <meta charset="utf-8">
+  <title>Mail Redirect</title>
+  <meta http-equiv="refresh" content="0; url=https://mail.worksmobile.com">
 </head>
 <body>
-  <div class="box">
-    <h1 style="margin:0 0 10px;">Nautron 메일 로그인</h1>
-    <div class="hint">네이버웍스 로그인 페이지로 이동 중입니다…</div>
-    <div class="hint" style="margin-top:16px;">
-      자동으로 이동하지 않으면 <a href="https://mail.worksmobile.com">여기</a>를 눌러주세요.
-    </div>
-  </div>
-
-  <script>
-    // ✅ 300~800ms 정도 지연 후 이동(OG 크롤링 안정화)
-    setTimeout(function(){
-      window.location.replace("https://mail.worksmobile.com");
-    }, 500);
-  </script>
+  <p>메일 페이지로 이동 중입니다...</p>
 </body>
 </html>
